@@ -101,6 +101,7 @@ class App extends Component {
 				pageTitle: 'Title'
 			}
 		}
+		
 
 		TagManager.initialize(tagManagerArgs)
 
