@@ -15,18 +15,7 @@ ReactDOM.render(
 		<App />
 	</Router>,
 
-const tagManagerArgs = {
-	gtmId: 'GTM-5K4NGR8'
-
-	dataLayer: {
-		event: 'virtualPageview',
-		pageUrl: location.pathname.href,
-		pageTitle: 'Title'
-	}
-}
-
-TagManager.initialize(tagManagerArgs)
-
+	
 	document.getElementById('root'),
 );
 

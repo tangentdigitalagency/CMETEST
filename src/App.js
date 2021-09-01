@@ -92,7 +92,19 @@ class App extends Component {
 		console.log(this.state.postData);
 	  };
 
-	  
+	  componentDidMount(){
+		const tagManagerArgs = {
+			gtmId: 'GTM-5K4NGR8',
+			dataLayer: {
+				event: 'virtualPageview',
+				pageUrl: location.pathname.href,
+				pageTitle: 'Title'
+			}
+		}
+
+		TagManager.initialize(tagManagerArgs)
+
+	  }
 
 	copyValuesToPostData2 = () => {
 		var tempArray = {
@@ -125,17 +137,6 @@ class App extends Component {
 
 	render() {
 
-
-		const tagManagerArgs = {
-			gtmId: 'GTM-5K4NGR8',
-			dataLayer: {
-				event: 'virtualPageview',
-				pageUrl: location.pathname.href,
-				pageTitle: 'Title'
-			}
-		}
-
-		TagManager.initialize(tagManagerArgs)
 
 
 		// console.log(this.props);
